@@ -1,0 +1,33 @@
+body {
+  background: #eaf1fc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+table td img {
+  width: 50px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+.invalid-feedback {
+  display: none;
+}
+
+input:invalid, select:invalid, textarea:invalid {
+  border-color: #dc3545;
+}
+
+input:invalid ~ .invalid-feedback,
+select:invalid ~ .invalid-feedback,
+textarea:invalid ~ .invalid-feedback {
+  display: block;
+}
